@@ -27,9 +27,6 @@ class Queue:
 # Create Object for Queue Class
 q = Queue() 
 
-# Create Objrcts for Each Functions
-q.is_empty()
-
 # New Sample Values
 q.enqueue("Item 00") # Pass New Item-00
 q.enqueue("Item 01") # Pass New Item-01

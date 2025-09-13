@@ -16,17 +16,16 @@ class Stack:
         else:
             self.top += 1
             self.stack[self.top] = item # Add New Item
-            print(item, "Pushed to Stack")
+            print("Pushed: ", item)
 
     def pop(self):
         if self.is_empty():
             return "Stack Underflow, cannot pop."
         else:
             item = self.stack[self.top]
-            self.stack[self.top] = None # Clear the position
-            self.top -= 1
-            print(item, "Popped from Stack")
-            return item # Remove Top Item
+            self.stack[self.top] = None # Remove the top item
+            self.top -= 1 # Decrease Top index
+            return item 
 
     def peek(self):
         if self.is_empty():
@@ -41,4 +40,4 @@ s.push("Plate 2")
 s.push("Plate 3")
 
 print("Stack is empty :", s.is_empty())
-s.pop() # Remove Top Item
+print("Popped Item :", s.pop()) # Remove Top Item
